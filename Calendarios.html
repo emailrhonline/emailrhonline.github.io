@@ -10,7 +10,22 @@
 
 <script>
 $(function() {
-    $("#calendario").datepicker({
+    $("#calendario1").datepicker({
+        changeMonth: true,
+        changeYear: true,
+		dateFormat: 'dd/mm/yy',
+        dayNames: ['Domingo','Segunda','Terça','Quarta','Quinta','Sexta','Sábado','Domingo'],
+        dayNamesMin: ['D','S','T','Q','Q','S','S','D'],
+        dayNamesShort: ['Dom','Seg','Ter','Qua','Qui','Sex','Sáb','Dom'],
+        monthNames: ['Janeiro','Fevereiro','Março','Abril','Maio','Junho','Julho','Agosto','Setembro','Outubro','Novembro','Dezembro'],
+        monthNamesShort: ['Jan','Fev','Mar','Abr','Mai','Jun','Jul','Ago','Set','Out','Nov','Dez'],
+		showButtonPanel:true
+    });
+});
+</script>
+	<script>
+$(function() {
+    $("#calendario2").datepicker({
         changeMonth: true,
         changeYear: true,
 		dateFormat: 'dd/mm/yy',
@@ -25,6 +40,6 @@ $(function() {
 </script>
 </head>
 <body>
-    <p>Data Inicial: <input type="text" id="calendario" /></p> <p>Data Final: <input type="text" id="calendario" /></p>
+    <p>Data Inicial: <input type="text" id="calendario1" /></p> <p>Data Final: <input type="text" id="calendario2" /></p>
  </body>
 </html>
